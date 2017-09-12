@@ -1,0 +1,397 @@
+extends layouts/html.jade
+block content
+    div.assv-wrapper
+        div.main
+            div.wrapper-inner
+                div.breadcrumbs
+                    a(href="#").breadcrumbs-logo
+                    a(href="#") Спортивное питание
+                div.main-content
+                    aside
+                        div.category.filter
+                            h3  Категория
+                            span
+                            form.mCustomScrollbar
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    |Аминокислотные комплексы
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Коэнзим Q10
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Шейкеры и контейнеры
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Джемы, сиропы, паста
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Сывороточный протеин
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Жидкие аминокислоты
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Мультивитамины для всех
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Трибулус
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Гейнеры
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Мужские витамины
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Аминокислотные комплексы
+                        div.color.filter
+                            h3  цвет
+                            span
+                            form.mCustomScrollbar
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | малиновый
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | оранжевый
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | синий
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | чёрный
+                        div.brand.filter
+                            h3  бренд
+                            span
+                            form.mCustomScrollbar
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | APS Nutrition
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Biomeals
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | BlackStone Labs
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Blender Bottle
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | BSN
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Centurion Labz
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Cloma Pharma
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | CMTech
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Doctor's Best
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Finaflex
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | APS Nutrition
+                        div.brand.filter
+                            h3  цена
+                            span
+                            div#slider
+                            input(type="text", id="minCost", value="0")
+                            input(type="text", id="maxCost", value="15000")
+                    div.main-right-column
+                        div.filter-up
+                            ul.show
+                                li  Показать
+                                li
+                                    a(href="#").active 15
+                                li
+                                    a(href="#") 30
+                                li
+                                    a(href="#") 60
+                            ul.sort
+                                li  Сортировать
+                                li
+                                    a(href="#").active по умолчанию
+                                li
+                                    a(href="#") возрастанию цены
+                                li
+                                    a(href="#") убыванию цены
+                                li
+                                    a(href="#") скидке
+                        div.list
+                            div.filter-click    Фильтр
+                            ul
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-1.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Lipo 6 Black Ultra Concentrate
+                                    p.description  Nutrex Lipo 6 Black Ultra Concentrate
+                                    span.portion   60 капсул
+                                    span.price-stock
+                                    span.price
+                                        |1 360
+                                        |&#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-2.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Now Tribulus
+                                    p.description  Now Tribulus 1000 мг
+                                    span.portion   90 таблеток
+                                    span.price-stock
+                                    span.price
+                                        | 1 130
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-active
+                                        img(src="img/food/food-3.jpg", alt="food-img")
+                                        span.stock  Скидка 10%
+                                    h2.title   Promera Sports Con-Cret
+                                    p.description  Promera Sports Con-Cret
+                                    span.portion   48 порций
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-1.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Lipo 6 Black Ultra Concentrate
+                                    p.description  Nutrex Lipo 6 Black Ultra Concentrate
+                                    span.portion   60 капсул
+                                    span.price-stock
+                                    span.price
+                                        | 1 360
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-2.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Now Tribulus
+                                    p.description  Now Tribulus 1000 мг
+                                    span.portion   90 таблеток
+                                    span.price-stock
+                                    span.price
+                                        | 1 130
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-active
+                                        img(src="img/food/food-3.jpg", alt="food-img")
+                                        span.stock  Скидка 10%
+                                    h2.title   Promera Sports Con-Cret
+                                    p.description  Promera Sports Con-Cret
+                                    span.portion   48 порций
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-1.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Lipo 6 Black Ultra Concentrate
+                                    p.description  Nutrex Lipo 6 Black Ultra Concentrate
+                                    span.portion   60 капсул
+                                    span.price-stock
+                                    span.price
+                                        | 1 360
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-2.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Now Tribulus
+                                    p.description  Now Tribulus 1000 мг
+                                    span.portion   90 таблеток
+                                    span.price-stock
+                                    span.price
+                                        | 1 130
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-active
+                                        img(src="img/food/food-3.jpg", alt="food-img")
+                                        span.stock  Скидка 10%
+                                    h2.title   Promera Sports Con-Cret
+                                    p.description  Promera Sports Con-Cret
+                                    span.portion   48 порций
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-1.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Lipo 6 Black Ultra Concentrate
+                                    p.description  Nutrex Lipo 6 Black Ultra Concentrate
+                                    span.portion   60 капсул
+                                    span.price-stock
+                                    span.price
+                                        | 1 360
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-2.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Now Tribulus
+                                    p.description  Now Tribulus 1000 мг
+                                    span.portion   90 таблеток
+                                    span.price-stock
+                                    span.price
+                                        | 1 130
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-active
+                                        img(src="img/food/food-3.jpg", alt="food-img")
+                                        span.stock  Скидка 10%
+                                    h2.title   Promera Sports Con-Cret
+                                    p.description  Promera Sports Con-Cret
+                                    span.portion   48 порций
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-1.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Lipo 6 Black Ultra Concentrate
+                                    p.description  Nutrex Lipo 6 Black Ultra Concentrate
+                                    span.portion   60 капсул
+                                    span.price-stock
+                                    span.price
+                                        | 1 360
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/food/food-2.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Now Tribulus
+                                    p.description  Now Tribulus 1000 мг
+                                    span.portion   90 таблеток
+                                    span.price-stock
+                                    span.price
+                                        | 1 130
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-active
+                                        img(src="img/food/food-3.jpg", alt="food-img")
+                                        span.stock  Скидка 10%
+                                    h2.title   Promera Sports Con-Cret
+                                    p.description  Promera Sports Con-Cret
+                                    span.portion   48 порций
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+                        div.filter-down
+                            ul.show
+                                li  Показать
+                                li
+                                    a(href="#").active 15
+                                li
+                                    a(href="#") 30
+                                li
+                                    a(href="#") 60
+                            ul.pagination
+                                li
+                                    a(href="#") В начало
+                                li
+                                    a(href="#").number-pagination 1
+                                li
+                                    a(href="#").number-pagination.active 2
+                                li
+                                    a(href="#").number-pagination 3
+                                li
+                                    a(href="#").number-pagination 4
+                                li
+                                    a(href="#").number-pagination 5
+                                li
+                                    a(href="#") ...
+                                li
+                                    a(href="#").active Далее
+                div.best-brand
+                    h2  ЛУчшие бренды
+                    span
+                    div.slider-brand
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-1.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-2.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-3.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-4.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-1.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-2.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-3.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-4.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-1.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-2.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-3.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-4.jpg", alt="brand-img")
+                    a(href="#").all-brand Все бренды

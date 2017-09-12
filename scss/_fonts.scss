@@ -1,0 +1,8 @@
+@import "bourbon";
+
+//@include font-face("Fregat", "../fonts/FregatBoldItalic/Fregat_bold_italic", 700 , italic , $file-formats: eot woff ttf svg);
+
+@include font-face("Open-sans", "../fonts/open-sans/OpenSans-Regular");
+@include font-face("Open-sans-semibold", "../fonts/open-sans/OpenSans-Semibold");
+@include font-face("Open-sans-bold", "../fonts/open-sans/OpenSans-Bold");
+@include font-face("Awesome", "../libs/font-awesome/fonts/fontawesome-webfont")

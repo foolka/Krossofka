@@ -1,0 +1,693 @@
+a {
+  transition: .4s;
+}
+
+
+//******************************************* BreadCrumbs styles
+
+.main {
+  .breadcrumbs {
+    margin: 10px 0 20px;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    a {
+      display: inline-block;
+      margin-right: 20px;
+      font-family: Open-sans-semibold, sans-serif;
+      font-size: 16px;
+      color: #ff0000;
+    }
+    .breadcrumbs-logo {
+      width: 46px;
+      height: 16px;
+      background: url("../img/logo-breadcrumbs.png");
+      position: relative;
+      &:after {
+        content: "/";
+        display: inline-block;
+        color: black;
+        position: absolute;
+        top: 0;
+        right: -15px;
+      }
+    }
+  }
+
+  //******************************************* Food styles
+
+
+  .main-content {
+    display: flex;
+  }
+
+  //******************************************* Aside styles
+
+
+  aside {
+    display: inline-block;
+    width: 270px;
+    margin-right: 20px;
+    .filter{
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .size {
+      label {
+        display: inline-flex;
+        width: 49%;
+      }
+    }
+    form {
+      max-height: 230px;
+      overflow: auto;
+      .mCSB_draggerRail {
+        background: #f8f8f8;
+      }
+      .mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar{
+        background: #ff0000;
+      }
+      .mCSB_draggerContainer {
+        .mCSB_draggerRail {
+          background: #f8f8f8;
+          border: 1px solid #b6b6b6;
+        }
+        .mCSB_dragger {
+          height: 55px;
+          .mCSB_dragger_bar {
+            width: 12px;
+            background: #959595;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+    h3 {
+      display: inline-block;
+      height: 28px;
+      font-family: Open-sans-bold, sans-serif;
+      font-size: 16px;
+      color: red;
+      text-transform: uppercase;
+      border-bottom: 2px red solid;
+      margin-bottom: 5px;
+      padding-bottom: 30px;
+    }
+    span {
+      display: inline-block;
+      content: "";
+      width: 100%;
+      height: 32px;
+      border-bottom: 2px #cccccc solid;
+      position: absolute;
+      left: 0;
+      z-index: -5;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3px;
+      font-family: Open-sans, sans-serif;
+      font-size: 14px;
+      color: #333333;
+      input {
+        margin-right: 5px;
+      }
+      input[type="radio"]:not(checked) {
+        position: absolute;
+        opacity: 0;
+      }
+      input[type="radio"]:not(checked) + .fix {
+        position: relative;
+        padding: 0 0 0 25px;
+      }
+      input[type="radio"]:not(checked) + .fix:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #CDD1DA;
+        border-bottom: none;
+        border-radius: 50%;
+        background: #f8f8f8;
+      }
+      input[type="radio"]:checked + .fix:before{
+        background: #ff0000;
+      }
+      input[type="checkbox"]:not(checked) {
+        position: absolute;
+        opacity: 0;
+      }
+      input[type="checkbox"]:not(checked) + .fix {
+        position: relative;
+        padding: 0 0 0 25px;
+      }
+      input[type="checkbox"]:not(checked) + .fix:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        background: url("../img/input-checkbox.png") 0 0;
+      }
+      input[type="checkbox"]:checked + .fix:before {
+        background: url("../img/input-checkbox.png") 0 12px;
+      }
+    }
+    /* Ширина слайдера */
+    #slider {
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    /* Контейнер слайдера */
+    .ui-slider {
+      position: relative;
+    }
+    /* Ползунок */
+    .ui-slider .ui-slider-handle {
+      position: absolute;
+      z-index: 2;
+      width: 20px;   /* Задаем нужную ширину */
+      height: 20px;  /* и высоту */
+      background: #cccccc; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+      border-radius: 50%;
+      border: 1px solid grey;
+      cursor: pointer
+    }
+    .ui-slider .ui-slider-range {
+      position: absolute;
+      z-index: 1;
+      font-size: .7em;
+      display: block;
+      border: 0;
+      overflow: hidden;
+    }
+    /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+    .ui-slider-horizontal {
+      height: 8px; /* задаем высоту согласно дизайна */
+    }
+    /* позиционируем ползунки */
+    .ui-slider-horizontal .ui-slider-handle {
+      top: -5px;
+      margin-left: -6px;
+    }
+    .ui-slider-horizontal .ui-slider-range {
+      top: 0;
+      height: 100%;
+    }
+    .ui-slider-horizontal .ui-slider-range-min {
+      left: 0;
+    }
+    .ui-slider-horizontal .ui-slider-range-max {
+      right: 0;
+    }
+    /* оформление полосы по которой ходит ползунок */
+    .ui-widget-content {
+      border: 1px solid #D4D4D4;
+      background: #fff;
+    }
+    /* оформление активного участка (между двумя ползунками) */
+    .ui-widget-header {
+      border: 1px solid #D4D4D4;
+      background: #f00;
+    }
+    /* скругление для полосы слайдера */
+    .ui-corner-all {
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+    }
+    #minCost, #maxCost {
+      display: inline-block;
+      width: 110px;
+      height: 22px;
+      font-family: Open-sans-semibold, sans-serif;
+      font-size: 16px;
+      color: #333333;
+      text-align: center;
+      border: 1px solid grey;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    #minCost {
+      float: left;
+    }
+    #maxCost {
+      float: right;
+    }
+
+  }
+}
+
+//******************************************* Main styles
+
+.main {
+  .main-right-column {
+    display: inline-block;
+    width: calc(100% - 283px);
+    .filter-up {
+      display: block;
+      border-bottom: 2px solid #cccccc;
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .filter-down {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 80px;
+      border-top: 2px solid #cccccc;
+    }
+    ul {
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin-left: 5px;
+        height: 26px;
+        a {
+          font-family: Open-sans-semibold, sans-serif;
+          color: #666666;
+          font-size: 12px;
+          text-transform: uppercase;
+          padding: 3px 10px;
+          height: 26px;
+          line-height: 26px;
+          &:hover {
+            background: #f1f1f1;
+            border-radius: 20px;
+          }
+          &.active {
+            background: #ff0000;
+            color: white;
+          }
+        }
+        &:first-child {
+          font-family: Open-sans-bold, sans-serif;
+          color: #333333;
+          text-transform: uppercase;
+          font-size: 12px;
+          margin-left: 0;
+        }
+      }
+    }
+    .show {
+      float: left;
+      li {
+        height: 26px;
+        a {
+          display: inline-block;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          padding: 0;
+          text-align: center;
+          line-height: 26px;
+        }
+      }
+    }
+    .sort {
+      float: right;
+      li {
+        a {
+          border-radius: 20px;
+        }
+      }
+    }
+    .pagination {
+      float: right;
+      li {
+        .number-pagination {
+          display: block;
+          width: 26px;
+          height: 26px;
+          border-radius: 100px;
+          line-height: 26px;
+          padding: 0;
+          text-align: center;
+        }
+        a.active {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+.main {
+  .main-content {
+    .main-right-column {
+      .list {
+        .filter-click {
+          display: none;
+        }
+        ul {
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row wrap;
+          li {
+            display: inline-block;
+            margin: 30px auto 0;
+            text-align: center;
+            width: 269px;
+            height: 390px;
+            .image {
+              display: block;
+              width: 269px;
+              height: 269px;
+              position: relative;
+              padding: 0;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .image.new {
+              &:before {
+                content: "Новинка";
+                display: block;
+                width: 70px;
+                height: 28px;
+                background: #39b54a;
+                font-family: Open-sans, sans-serif;
+                font-size: 14px;
+                text-transform: none;
+                line-height: 28px;
+                color: white;
+                position: absolute;
+                top: 7px;
+                left: 7px;
+              }
+            }
+            .image .stock {
+              display: none;
+            }
+            .image.stock-active .stock {
+              display: block;
+              width: 91px;
+              height: 28px;
+              background: #ec008c;
+              font-family: Open-sans, sans-serif;
+              font-size: 14px;
+              text-transform: none;
+              line-height: 28px;
+              color: white;
+              position: absolute;
+              top: 7px;
+              right: 7px;
+            }
+            .image.stock-full {
+              &:after {
+                content: "Распродажа";
+                display: block;
+                width: 91px;
+                height: 28px;
+                background: #ec008c;
+                font-family: Open-sans, sans-serif;
+                font-size: 14px;
+                text-transform: none;
+                line-height: 28px;
+                color: white;
+                position: absolute;
+                top: 7px;
+                right: 7px;
+              }
+            }
+            .title {
+              font-family: Open-sans-semibold, sans-serif;
+              font-size: 14px;
+              color: black;
+              text-transform: uppercase;
+            }
+            .description, .portion {
+              display: block;
+              font-family: Open-sans, sans-serif;
+              font-size: 14px;
+              color: black;
+              text-transform: none;
+            }
+            .price-stock {
+              display: inline-block;
+              margin-right: 5px;
+              font-family: Open-sans-bold, sans-serif;
+              font-size: 14px;
+              color: #b0b0b0;
+              text-decoration: line-through;
+            }
+            .price {
+              display: inline-block;
+              font-family: Open-sans-bold, sans-serif;
+              font-size: 16px;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//******************************************* Slider styles
+
+.main {
+  .best-brand {
+    position: relative;
+    h2 {
+      display: inline-block;
+      height: 28px;
+      font-family: Open-sans-bold, sans-serif;
+      font-size: 16px;
+      color: red;
+      text-transform: uppercase;
+      border-bottom: 2px red solid;
+      margin-bottom: 5px;
+      padding-bottom: 30px;
+    }
+    span {
+      display: inline-block;
+      content: "";
+      width: 100%;
+      height: 32px;
+      border-bottom: 2px #cccccc solid;
+      position: absolute;
+      left: 0;
+      z-index: -5;
+    }
+    .all-brand {
+      display: block;
+      width: 118px;
+      height: 23px;
+      background: #ebebeb;
+      font-family: Open-sans-semibold, sans-serif;
+      font-size: 12px;
+      line-height: 23px;
+      text-align: center;
+      text-transform: uppercase;
+      color: black;
+      border-radius: 20px;
+      position: absolute;
+      right: 0;
+      bottom: -55px;
+      transition: .4s;
+      &:hover {
+        background: #ff0000;
+        color: white;
+      }
+    }
+    .slider-brand {
+      margin-top: 30px;
+      margin-bottom: 160px;
+      position: relative;
+      .slide {
+        position: relative;
+      }
+      a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+      }
+      .slick-arrow {
+        display: block;
+        width: 48px;
+        height: 23px;
+        background: #ebebeb;
+        border: none;
+        border-radius: 20px;
+        position: absolute;
+        transition: .4s;
+        &:hover {
+          background: #ff0000;
+          color: white;
+        }
+      }
+      .slick-prev {
+        color: #848383;
+        left: 50%;
+        margin-left: -123px;
+        bottom: -55px;
+        text-align: center;
+        line-height: 23px;
+      }
+      .slick-next {
+        color: #848383;
+        right: 50%;
+        margin-right: -123px;
+        bottom: -55px;
+        text-align: center;
+        line-height: 23px;
+      }
+      .slick-dots {
+        position: absolute;
+        left: 50%;
+        bottom: -55px;
+        margin-left: -51px;
+        .slick-active {
+          button {
+            background: #ff0000;
+            color: #ff0000;
+          }
+        }
+        li {
+          display: inline-block;
+          margin-right: 17px;
+          &:last-child {
+            margin-right: 0;
+          }
+          button {
+            color: #ebebeb;
+            width: 23px;
+            height: 23px;
+            border: 1px solid transparent;
+            border-radius: 50px;
+            background: #ebebeb;
+            transition: .4s;
+            &:hover {
+              border: 1px solid grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//***********************************************************
+//***********************************************************
+
+@media only screen and (max-width : 1100px) {
+  .main {
+    .main-content {
+      .main-right-column {
+        .filter-up {
+          .show {
+            display: block;
+            float: none;
+          }
+          .sort {
+            display: block;
+            float: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width : 919px) {
+  .main {
+    .main-content {
+      position: relative;
+      aside {
+        position: absolute;
+        left: -500px;
+        transition: .4s;
+        background: #e8e8e8;
+        z-index: 30;
+        top: 93px;
+        border-radius: 10px;
+      }
+      aside.active {
+        left: 0;
+      }
+      .main-right-column {
+        width: 100%;
+        .list {
+          position: relative;
+          .filter-click {
+            display: block;
+            width: 100px;
+            height: 23px;
+            font-family: Open-sans-bold, sans-serif;
+            font-size: 14px;
+            color: #666666;
+            line-height: 23px;
+            text-align: center;
+            text-transform: uppercase;
+            background: #ebebeb;
+            border-radius: 20px;
+            position: absolute;
+            top: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .best-brand {
+      .all-brand {
+        left: 50%;
+        margin-left: -59px;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width : 582px) {
+  .main {
+    .main-content {
+      aside {
+        top: 143px;
+      }
+      .main-right-column {
+        .filter-down {
+          .show {
+            float: none;
+            display: block;
+          }
+          .pagination {
+            float: none;
+            display: block;
+            text-align: center;
+            li {
+              &:first-child {
+                display: block;
+              }
+              &:last-child {
+                display: block;
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

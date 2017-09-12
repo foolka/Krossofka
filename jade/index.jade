@@ -1,0 +1,41 @@
+extends layouts/html.jade
+block content
+    div.assv-wrapper
+        div.main-contacts
+            div.wrapper-inner
+                div.breadcrumbs
+                    a(href="#").breadcrumbs-logo
+                    a(href="#") Контакты
+                ul.contacts
+                    li.address
+                        h3  Адрес
+                        p   г. Москва, Кронштадтский бульвар, д. 9, стр. 4 (м. Водный Стадион)
+                    li.telephone
+                        h3  телефоны
+                        p   8 (000) 123-45-67
+                        p   8 (495) 111-22-33
+                        p   WhatsApp и Viber: для онлайн заявки 8 (000) 123-45-67
+                    li.mail
+                        h3  mail
+                        p
+                            |info@krossofka.ru
+                            br
+                            |zakaz@krossofka.ru
+                    li.time-work
+                        h3  график работы
+                        p
+                            |C 9-00 до 22-00
+                            br
+                            |Выходной: воскресенье
+        div.map
+            img(src="img/map.png")
+        div.search
+            div.wrapper-inner
+                div.logo
+                    a(href="#")
+                form
+                    label
+                        input(type="email", name="email", placeholder="Введите свой эл.адрес", required=)
+                    button  ПОДПИСАТЬСЯ
+                p.
+                    Подпишитесь на нашу рассылку, узнавайте первыми о скидках и акциях!

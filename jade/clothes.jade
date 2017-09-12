@@ -1,0 +1,542 @@
+extends layouts/html.jade
+block content
+    div.assv-wrapper
+        div.main
+            div.wrapper-inner
+                div.breadcrumbs
+                    a(href="#").breadcrumbs-logo
+                    a(href="#") Спортивная одежда
+                div.main-content
+                    aside
+                        div.male-female.filter
+                            h3  пол
+                            span
+                            form.mCustomScrollbar
+                                label
+                                    input(type="radio")
+                                    div.fix
+                                    |Мужской
+                                label
+                                    input(type="radio")
+                                    div.fix
+                                    |Женский
+                                label
+                                    input(type="radio")
+                                    div.fix
+                                    |Детский
+                                label
+                                    input(type="radio")
+                                    div.fix
+                                    |Унисекс
+                                label
+                                    input(type="radio", checked)
+                                    div.fix
+                                    |ВСЕ
+                        div.category.filter
+                            h3  Категория
+                            span
+                            form.mCustomScrollbar
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Анораки
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Бомберы
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Ветровки
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Дождевики
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Жилеты
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Куртки
+                                label
+                                    input(type="checkbox" checked)
+                                    div.fix
+                                    | Пальто
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Парки
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Пиджаки
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Плащи
+                                label
+                                    input(type="checkbox" checked)
+                                    div.fix
+                                    | Пальто
+                        div.color.filter
+                            h3  цвет
+                            span
+                            form.mCustomScrollbar
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Бежевый
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Белый
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Бирюзовый
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Бордовый
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Голубой
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Желтый
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Зеленый
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Золотой
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Камуфляж
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Коричневый
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Золотой
+                        div.brand.filter
+                            h3  бренд
+                            span
+                            form.mCustomScrollbar
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | A&W
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Acca Kappa
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Adidas Consortium
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Adidas Originals
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Adidas Originals x XBYO
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Adidas Performance
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Ally Capellino
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Alpha Industries
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Altoids
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | Anderson's
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | adidas Consortium
+                        div.size.filter
+                            h3  размер
+                            span
+                            form.mCustomScrollbar
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 36
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 38
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 40
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 42
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 44
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 46
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 48
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 50
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 52
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 54
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 1(M)
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 2(L)
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 3(XL)
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 38(S)
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 40(M)
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 42(L)
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 44(XL)
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 46(XXL)
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | XXS
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 38 EU
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | 37.5 EU
+                                label
+                                    input(type="checkbox")
+                                    div.fix
+                                    | S(37-39)
+                        div.brand.filter
+                            h3  цена
+                            span
+                            div#slider
+                            input(type="text", id="minCost", value="0")
+                            input(type="text", id="maxCost", value="15000")
+                    div.main-right-column
+                        div.filter-up
+                            ul.show
+                                li  Показать
+                                li
+                                    a(href="#").active 15
+                                li
+                                    a(href="#") 30
+                                li
+                                    a(href="#") 60
+                            ul.sort
+                                li  Сортировать
+                                li
+                                    a(href="#").active по умолчанию
+                                li
+                                    a(href="#") возрастанию цены
+                                li
+                                    a(href="#") убыванию цены
+                                li
+                                    a(href="#") скидке
+                        div.list
+                            div.filter-click    Фильтр
+                            ul
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-1.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Original
+                                    p.description  Кроссовки
+                                    span.portion   NMD CS2 Primeknit Solid
+                                    span.price-stock
+                                    span.price
+                                        | 15 990
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-2.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   Superga
+                                    p.description  Кеды
+                                    span.portion 2750 Cotu Classic Navy
+                                    span.price-stock
+                                    span.price
+                                        | 10 490
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-active
+                                        img(src="img/clothes/clother-3.jpg", alt="food-img")
+                                        span.stock  Скидка 20%
+                                    h2.title   adidas Originals
+                                    p.description  Рюкзак
+                                    span.model   Classic Black/Camouflage
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-4.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Consortium
+                                    p.description  Мужские кроссовки
+                                    span.portion   x Avenue EQT 93/16 Support Tan
+                                    span.price-stock
+                                    span.price
+                                        | 13 490
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-5.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Consortium
+                                    p.description  Кроссовки
+                                    span.portion x Sneakerboy x Wish Clima Cool 1 Primeknit White
+                                    span.price-stock
+                                    span.price
+                                        | 10 490
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-active
+                                        img(src="img/clothes/clother-6.jpg", alt="food-img")
+                                        span.stock  Скидка 30%
+                                    h2.title   adidas Originals
+                                    p.description  Рюкзак
+                                    span.model   Classic Black/Camouflage
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-4.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Consortium
+                                    p.description  Мужские кроссовки
+                                    span.portion   x Avenue EQT 93/16 Support Tan
+                                    span.price-stock
+                                    span.price
+                                        | 13 490
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-5.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Consortium
+                                    p.description  Кроссовки
+                                    span.portion x Sneakerboy x Wish Clima Cool 1 Primeknit White
+                                    span.price-stock
+                                    span.price
+                                        | 10 490
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-full
+                                        img(src="img/clothes/clother-6.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Originals
+                                    p.description  Рюкзак
+                                    span.model   Classic Black/Camouflage
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-4.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Consortium
+                                    p.description  Мужские кроссовки
+                                    span.portion   x Avenue EQT 93/16 Support Tan
+                                    span.price-stock
+                                    span.price
+                                        | 13 490
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-5.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Consortium
+                                    p.description  Кроссовки
+                                    span.portion x Sneakerboy x Wish Clima Cool 1 Primeknit White
+                                    span.price-stock
+                                    span.price
+                                        | 10 490
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-full
+                                        img(src="img/clothes/clother-6.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Originals
+                                    p.description  Рюкзак
+                                    span.model   Classic Black/Camouflage
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-4.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Consortium
+                                    p.description  Мужские кроссовки
+                                    span.portion   x Avenue EQT 93/16 Support Tan
+                                    span.price-stock
+                                    span.price
+                                        | 13 490
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new
+                                        img(src="img/clothes/clother-5.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Consortium
+                                    p.description  Кроссовки
+                                    span.portion x Sneakerboy x Wish Clima Cool 1 Primeknit White
+                                    span.price-stock
+                                    span.price
+                                        | 10 490
+                                        | &#8381;
+                                li
+                                    a(href="#").image.new.stock.stock-full
+                                        img(src="img/clothes/clother-6.jpg", alt="food-img")
+                                        span.stock
+                                    h2.title   adidas Originals
+                                    p.description  Рюкзак
+                                    span.model   Classic Black/Camouflage
+                                    span.price-stock
+                                        | 2 590
+                                        | &#8381;
+                                    span.price
+                                        | 2 100
+                                        | &#8381;
+
+                        div.filter-down
+                            ul.show
+                                li  Показать
+                                li
+                                    a(href="#").active 15
+                                li
+                                    a(href="#") 30
+                                li
+                                    a(href="#") 60
+                            ul.pagination
+                                li
+                                    a(href="#") В начало
+                                li
+                                    a(href="#").number-pagination 1
+                                li
+                                    a(href="#").number-pagination.active 2
+                                li
+                                    a(href="#").number-pagination 3
+                                li
+                                    a(href="#").number-pagination 4
+                                li
+                                    a(href="#").number-pagination 5
+                                li
+                                    a(href="#") ...
+                                li
+                                    a(href="#").active Далее
+                div.best-brand
+                    h2  ЛУчшие бренды
+                    span
+                    div.slider-brand
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-1.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-2.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-3.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-4.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-1.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-2.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-3.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-4.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-1.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-2.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-3.jpg", alt="brand-img")
+                        div.slide
+                            a(href="#")
+                            img(src="img/slider/brand-4.jpg", alt="brand-img")
+                    a(href="#").all-brand Все бренды
